@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Employe;
+package api;
 
 import java.io.*;
 import java.sql.*;
@@ -33,7 +33,7 @@ public class Server extends Thread {
     public Server()
     {
         try {
-            server= new ServerSocket(1400);
+            server= new ServerSocket(13);
             System.out.println("Demarrage du serveur");
             start();
         } catch (IOException ex) {

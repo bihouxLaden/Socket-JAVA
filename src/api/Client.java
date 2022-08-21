@@ -1,4 +1,4 @@
-package Employe;
+package api;
 
 import java.net.*;
 import java.io.*;
@@ -45,7 +45,7 @@ public class Client extends JFrame {
         
   
             try {
-                clientSocket = new Socket("localhost",1400);
+                clientSocket = new Socket("localhost",13);
                   br = new ObjectInputStream(clientSocket.getInputStream());
                   records =(Vector)br.readObject();
                   br.close();
